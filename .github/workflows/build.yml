@@ -188,7 +188,7 @@ jobs:
       run: pip3 install ${{ env.PIP_EXTRAS }}
 
     - name: Download package
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: ${{ env.DFTD3_OUTPUT }}
 
